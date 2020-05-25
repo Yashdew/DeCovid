@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
 var overallStatsNumber = document.querySelectorAll("p.subtitle");
 var worldStatsTable = document.querySelector("#worldStatsTable");
 var table = document.querySelector("table");
-// console.log(worldStatsTable);
+console.log(overallStatsNumber);
 
 
 
@@ -54,7 +54,15 @@ fetch("https://api.covid19api.com/summary").then((response) => {
       // console.log(countries);
 
       countries.forEach((country, index) => {
-        // console.log(country);
+         if(country.Country == 'India')
+         { 
+          overallStatsNumber[6].textContent = country.TotalConfirmed;
+          overallStatsNumber[7].textContent = country.TotalDeaths;
+          overallStatsNumber[8].textContent = country.TotalRecovered;
+          overallStatsNumber[9].textContent = country.NewConfirmed;
+          overallStatsNumber[10].textContent =  country.NewDeaths;
+          overallStatsNumber[11].textContent = country.NewRecovered;
+         }
         // console.log(country.Country);
         const row = table.insertRow(index + 1);
     
