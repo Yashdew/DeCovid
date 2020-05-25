@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DeCovid</title>
+
+    <link rel="stylesheet" href="css/bulma.min.css" />
+    <link rel="stylesheet" href="index.css" />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar is-transparent">
+      <div class="navbar-brand">
+        <a class="navbar-item">
+          <img src="img/logo.jpg" width="48" height="64" />
+        </a>
+        <div
+          class="navbar-burger burger"
+          data-target="navbarExampleTransparentExample"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <div id="navbarExampleTransparentExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item">
+            Home
+          </a>
+        </div>
+
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="field is-grouped">
+              <p class="control">
+                <a
+                  class="button is-rounded is-dark"
+                  href="https://github.com/jgthms/bulma/releases/download/0.8.2/bulma-0.8.2.zip"
+                >
+                  <span class="icon">
+                    <i class="fab fa-instagram"></i>
+                  </span>
+                  <span>Follow Me!</span>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="section">
+      <div class="container">
+        <h1 class="title">Stats Overview</h1>
+        <h2 class="subtitle">
+          Live overall <strong>WORLD</strong> statistics, updated
+          <strong>multiple times a day</strong>
+        </h2>
+
+        <div class="tile is-ancestor">
+          <div class="tile is-parent">
+            <article class="tile is-child box has-text-centered">
+              <p class="title">Total Confirmed Cases</p>
+              <p class="subtitle"></p>
+            </article>
+          </div>
+          <div class="tile is-parent">
+            <article class="tile is-child box has-text-centered">
+              <p class="title">Total Death Cases</p>
+              <p class="subtitle"></p>
+            </article>
+          </div>
+          <div class="tile is-parent">
+            <article class="tile is-child box has-text-centered">
+              <p class="title">Total Recovered Cases</p>
+              <p class="subtitle"></p>
+            </article>
+          </div>
+        </div>
+        <div class="tile is-ancestor">
+          <div class="tile is-parent">
+            <article class="tile is-child box has-text-centered">
+              <p class="title">New Confirmed Cases</p>
+              <p class="subtitle"></p>
+            </article>
+          </div>
+          <div class="tile is-parent">
+            <article class="tile is-child box has-text-centered">
+              <p class="title">New Death Cases</p>
+              <p class="subtitle"></p>
+            </article>
+          </div>
+          <div class="tile is-parent">
+            <article class="tile is-child box has-text-centered">
+              <p class="title">New Recovered Cases</p>
+              <p class="subtitle"></p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section is-fullwidth">
+      <div class="container">
+        <h1 class="title">World COVID-19 Stats</h1>
+        <h2 class="subtitle">
+          List of all the countries and their statistics
+        </h2>
+
+        <div class="tile is-ancestor">
+          <div class="tile is-parent" id="table_wrapper">
+            <table
+              class="tile table is-fullwidth is-child box has-text-centered"
+            >
+              <thead>
+                <tr>
+                  <th><abbr>Name</abbr></th>
+
+                  <th><abbr>Confirmed</abbr></th>
+                  <th><abbr>Changes Today</abbr></th>
+                  <th><abbr>Death</abbr></th>
+                  <th><abbr>Changes Today</abbr></th>
+                  <th><abbr>Recovered</abbr></th>
+                  <th><abbr>Changes Today</abbr></th>
+                </tr>
+              </thead>
+              <tbody id="worldStatsTable">
+                <tr>
+                  <th></th>
+
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section is-fullwidth">
+      <div class="container">
+        <h1 class="title">COVID-19 Statistical Map</h1>
+        <h2 class="subtitle">
+          Powered By HERE Maps
+        </h2>
+
+        <div class="tile is-ancestor">
+          <div class="tile is-parent" >
+
+            <iframe class="tile is-child box hereMap" src="https://app.developer.here.com/coronavirus/" frameborder="0"></iframe>
+            
+          
+          </div>
+        </div>
+      </div>
+    </section>
+
+ 
+
+    <script src="index.js"></script>
+  </body>
+</html>

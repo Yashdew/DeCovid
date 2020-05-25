@@ -1,0 +1,80 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background-color: #2E2F32 !important
+  
+}
+.section{
+  background-color: #2E2F32
+  
+
+}
+.section .container h1,.section .container h2{
+color: #ffffff !important;
+
+}
+.section .container h2 strong{
+  color: #E52623 !important;
+  
+  }
+
+
+
+nav{
+  background-color: #000000 !important;
+  color: #fff !important;
+  font-weight: bold;
+}
+nav a{
+  color: #fff !important;
+}
+
+nav  a:hover{
+  color:#E52623 !important
+}
+
+
+
+.box{
+
+  padding: 4rem !important;
+  background-color: #191C20;
+
+}
+.box p{
+  color: #ffffff;
+}
+
+table th, table tbody td{
+  color: #ffffff !important;
+}
+
+table{
+  width: 100% !important;
+  overflow-x: auto;
+}
+
+tbody tr:hover{
+  background-color:#E52623;
+  color: #000 !important;
+  font-weight: bold;
+
+}
+
+tbody tr th:hover,tr td:hover{
+  color: #000 !important;
+  font-weight: bold;
+}
+
+.tile.table {
+  max-height: 50rem;
+}
+
+.box.hereMap{
+
+  width: 100%;
+  height: 50rem;
+  padding: 0rem !important;
+
+}
