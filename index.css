@@ -2,70 +2,65 @@ body,
 html {
   margin: 0;
   padding: 0;
-  background-color: #ffffff !important
-  
+  background-color: #ffffff !important;
 }
-/* .section{
-  background-color: #2E2F32
-  
 
-} */
-.section .container h1,.section .container h2{
-color: #000 !important;
-
+.section .container h1,
+.section .container h2 {
+  color: #000 !important;
 }
-.section .container h2 strong{
-  color: #E52623 !important;
-  
-  }
+.section .container h2 strong {
+  color: #e52623 !important;
+}
 
-
-
-nav{
+nav {
   /* background-color: #000000 !important; */
   color: #000000 !important;
   font-weight: bold;
 }
-nav a{
+nav a {
   color: #000 !important;
 }
 
-nav  a:hover{
-  color:#FAB800!important
+nav a:hover {
+  color: #fab800 !important;
 }
 
 article:hover {
-  background-color:#FAB800;
+  background-color: #f5f5f5;
+  /* box-shadow: 1px 8px 20px grey; */
+  -webkit-transition: box-shadow 0.1s ease-in;
 }
 
-
-.box{
-
+.box {
   padding: 4rem !important;
-  /* background-color: #C6C6C6; */
-
+  /* background-color: #F5F5F5; */
+  box-shadow: none !important;
 }
-.box p{
+.box p {
   color: #000;
 }
 
-table th, table tbody td{
+table th,
+table tbody td {
   color: #000 !important;
 }
 
-table{
+table {
   width: 100% !important;
   overflow-x: auto;
 }
 
-tbody tr:hover{
-  background-color:#FAB800;
+tbody tr:hover {
+  background-color: #f5f5f5;
   color: #000 !important;
   font-weight: bold;
-
+  box-shadow: 1px 4px 10px grey;
+  -webkit-transition: box-shadow 0.1s ease-in;
 }
 
-tbody tr th:hover,tr td:hover{
+tbody tr th:hover,
+tr td:hover {
   color: #000 !important;
   font-weight: bold;
 }
@@ -74,10 +69,8 @@ tbody tr th:hover,tr td:hover{
   max-height: 50rem;
 }
 
-.box.hereMap{
-
+.box.hereMap {
   width: 100%;
   height: 50rem;
   padding: 0rem !important;
-
 }

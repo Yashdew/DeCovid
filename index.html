@@ -64,48 +64,47 @@
     <section class="section" id="home">
       <div class="container">
         <h1 class="title">Stats Overview</h1>
-        <h2 class="subtitle">
-          Live overall <strong>WORLD</strong> statistics, updated
+        <h2 class="subtitle">Live overall <strong>WORLD</strong> statistics, updated
           <strong>multiple times a day</strong>
         </h2>
 
         <div class="tile is-ancestor">
           <div class="tile is-parent">
             <article class="tile is-child box has-text-centered">
-              <p class="title">Total Confirmed Cases</p>
-              <p class="subtitle"></p>
+              <p class="title is-4">Total Confirmed Cases</p>
+              <p class="subtitle has-text-weight-medium has-text-warning is-3 "></p>
             </article>
           </div>
           <div class="tile is-parent">
             <article class="tile is-child box has-text-centered">
-              <p class="title">Total Death Cases</p>
-              <p class="subtitle"></p>
+              <p class="title is-4">Total Death Cases</p>
+              <p class="subtitle has-text-danger has-text-weight-medium is-3"></p>
             </article>
           </div>
-          <div class="tile is-parent">
+          <div class="tile is-parent ">
             <article class="tile is-child box has-text-centered">
-              <p class="title">Total Recovered Cases</p>
-              <p class="subtitle"></p>
+              <p class="title is-4">Total Recovered Cases</p>
+              <p class="subtitle has-text-success has-text-weight-medium is-3"></p>
             </article>
           </div>
         </div>
         <div class="tile is-ancestor">
           <div class="tile is-parent">
             <article class="tile is-child box has-text-centered">
-              <p class="title">New Confirmed Cases</p>
-              <p class="subtitle"></p>
+              <p class="title is-4">New Confirmed Cases</p>
+              <p class="subtitle has-text-weight-medium is-3 has-text-warning"></p>
             </article>
           </div>
           <div class="tile is-parent">
             <article class="tile is-child box has-text-centered">
-              <p class="title">New Death Cases</p>
-              <p class="subtitle"></p>
+              <p class="title is-4">New Death Cases</p>
+              <p class="subtitle has-text-danger has-text-weight-medium is-3"></p>
             </article>
           </div>
           <div class="tile is-parent">
             <article class="tile is-child box has-text-centered">
-              <p class="title">New Recovered Cases</p>
-              <p class="subtitle"></p>
+              <p class="title is-4">New Recovered Cases</p>
+              <p class="subtitle has-text-success has-text-weight-medium is-3"></p>
             </article>
           </div>
         </div>
@@ -183,50 +182,53 @@
         <div class="tile is-ancestor">
           <div class="tile is-parent">
             <article class="tile is-child box has-text-centered">
-              <p class="title">Total Confirmed Cases</p>
-              <p class="subtitle"></p>
+              <p class="title is-4">Total Confirmed Cases</p>
+              <p class="subtitle has-text-weight-medium has-text-warning is-3 "></p>
             </article>
           </div>
           <div class="tile is-parent">
             <article class="tile is-child box has-text-centered">
-              <p class="title">Total Death Cases</p>
-              <p class="subtitle"></p>
+              <p class="title is-4">Total Death Cases</p>
+              <p class="subtitle has-text-danger has-text-weight-medium is-3"></p>
             </article>
           </div>
-          <div class="tile is-parent">
+          <div class="tile is-parent ">
             <article class="tile is-child box has-text-centered">
-              <p class="title">Total Recovered Cases</p>
-              <p class="subtitle"></p>
+              <p class="title is-4">Total Recovered Cases</p>
+              <p class="subtitle has-text-success has-text-weight-medium is-3"></p>
             </article>
           </div>
         </div>
         <div class="tile is-ancestor">
           <div class="tile is-parent">
             <article class="tile is-child box has-text-centered">
-              <p class="title">New Confirmed Cases</p>
-              <p class="subtitle"></p>
+              <p class="title is-4">New Confirmed Cases</p>
+              <p class="subtitle has-text-weight-medium is-3 has-text-warning"></p>
             </article>
           </div>
           <div class="tile is-parent">
             <article class="tile is-child box has-text-centered">
-              <p class="title">New Death Cases</p>
-              <p class="subtitle"></p>
+              <p class="title is-4">New Death Cases</p>
+              <p class="subtitle has-text-danger has-text-weight-medium is-3"></p>
             </article>
           </div>
           <div class="tile is-parent">
             <article class="tile is-child box has-text-centered">
-              <p class="title">New Recovered Cases</p>
-              <p class="subtitle"></p>
+              <p class="title is-4">New Recovered Cases</p>
+              <p class="subtitle has-text-success has-text-weight-medium is-3"></p>
             </article>
           </div>
         </div>
-        <iframe src="https://ourworldindata.org/grapher/covid-tests-cases-deaths-per-million?time=2020-03-07..&country=IND" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+        
+       <div><canvas id="myChart"></canvas></div> 
+       
+       <canvas id="myChartTCC"></canvas>
       </div>
     </section>
 
     
  
-
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <script src="index.js"></script>
   </body>
 </html>
