@@ -64,7 +64,8 @@
     <section class="section" id="home">
       <div class="container">
         <h1 class="title">Stats Overview</h1>
-        <h2 class="subtitle">Live overall <strong>WORLD</strong> statistics, updated
+        <h2 class="subtitle">
+          Live overall <strong>WORLD</strong> statistics, updated
           <strong>multiple times a day</strong>
         </h2>
 
@@ -72,19 +73,25 @@
           <div class="tile is-parent">
             <article class="tile is-child box has-text-centered">
               <p class="title is-4">Total Confirmed Cases</p>
-              <p class="subtitle has-text-weight-medium has-text-warning is-3 "></p>
+              <p
+                class="subtitle has-text-weight-medium has-text-warning is-3"
+              ></p>
             </article>
           </div>
           <div class="tile is-parent">
             <article class="tile is-child box has-text-centered">
               <p class="title is-4">Total Death Cases</p>
-              <p class="subtitle has-text-danger has-text-weight-medium is-3"></p>
+              <p
+                class="subtitle has-text-danger has-text-weight-medium is-3"
+              ></p>
             </article>
           </div>
-          <div class="tile is-parent ">
+          <div class="tile is-parent">
             <article class="tile is-child box has-text-centered">
               <p class="title is-4">Total Recovered Cases</p>
-              <p class="subtitle has-text-success has-text-weight-medium is-3"></p>
+              <p
+                class="subtitle has-text-success has-text-weight-medium is-3"
+              ></p>
             </article>
           </div>
         </div>
@@ -92,19 +99,25 @@
           <div class="tile is-parent">
             <article class="tile is-child box has-text-centered">
               <p class="title is-4">New Confirmed Cases</p>
-              <p class="subtitle has-text-weight-medium is-3 has-text-warning"></p>
+              <p
+                class="subtitle has-text-weight-medium is-3 has-text-warning"
+              ></p>
             </article>
           </div>
           <div class="tile is-parent">
             <article class="tile is-child box has-text-centered">
               <p class="title is-4">New Death Cases</p>
-              <p class="subtitle has-text-danger has-text-weight-medium is-3"></p>
+              <p
+                class="subtitle has-text-danger has-text-weight-medium is-3"
+              ></p>
             </article>
           </div>
           <div class="tile is-parent">
             <article class="tile is-child box has-text-centered">
               <p class="title is-4">New Recovered Cases</p>
-              <p class="subtitle has-text-success has-text-weight-medium is-3"></p>
+              <p
+                class="subtitle has-text-success has-text-weight-medium is-3"
+              ></p>
             </article>
           </div>
         </div>
@@ -161,11 +174,12 @@
         </h2>
 
         <div class="tile is-ancestor">
-          <div class="tile is-parent" >
-
-            <iframe class="tile is-child box hereMap" src="https://app.developer.here.com/coronavirus/" frameborder="0"></iframe>
-            
-          
+          <div class="tile is-parent">
+            <iframe
+              class="tile is-child box hereMap"
+              src="https://app.developer.here.com/coronavirus/"
+              frameborder="0"
+            ></iframe>
           </div>
         </div>
       </div>
@@ -175,7 +189,7 @@
       <div class="container">
         <h1 class="title">India Overview</h1>
         <h2 class="subtitle">
-           Indepth statistics of <strong>INDIA</strong> and it's states, updated
+          Indepth statistics of <strong>INDIA</strong> and it's states, updated
           <strong>multiple times a day</strong>
         </h2>
 
@@ -183,19 +197,26 @@
           <div class="tile is-parent">
             <article class="tile is-child box has-text-centered">
               <p class="title is-4">Total Confirmed Cases</p>
-              <p class="subtitle has-text-weight-medium has-text-warning is-3 "></p>
+              <p
+                class="subtitle has-text-weight-medium has-text-warning is-3"
+              ></p>
+              <div><canvas id="myChart"></canvas></div> 
             </article>
           </div>
           <div class="tile is-parent">
             <article class="tile is-child box has-text-centered">
               <p class="title is-4">Total Death Cases</p>
-              <p class="subtitle has-text-danger has-text-weight-medium is-3"></p>
+              <p
+                class="subtitle has-text-danger has-text-weight-medium is-3"
+              ></p>
             </article>
           </div>
-          <div class="tile is-parent ">
+          <div class="tile is-parent">
             <article class="tile is-child box has-text-centered">
               <p class="title is-4">Total Recovered Cases</p>
-              <p class="subtitle has-text-success has-text-weight-medium is-3"></p>
+              <p
+                class="subtitle has-text-success has-text-weight-medium is-3"
+              ></p>
             </article>
           </div>
         </div>
@@ -203,38 +224,96 @@
           <div class="tile is-parent">
             <article class="tile is-child box has-text-centered">
               <p class="title is-4">New Confirmed Cases</p>
-              <p class="subtitle has-text-weight-medium is-3 has-text-warning"></p>
+              <p
+                class="subtitle has-text-weight-medium is-3 has-text-warning"
+              ></p>
             </article>
           </div>
           <div class="tile is-parent">
             <article class="tile is-child box has-text-centered">
               <p class="title is-4">New Death Cases</p>
-              <p class="subtitle has-text-danger has-text-weight-medium is-3"></p>
+              <p
+                class="subtitle has-text-danger has-text-weight-medium is-3"
+              ></p>
             </article>
           </div>
           <div class="tile is-parent">
             <article class="tile is-child box has-text-centered">
               <p class="title is-4">New Recovered Cases</p>
-              <p class="subtitle has-text-success has-text-weight-medium is-3"></p>
+              <p
+                class="subtitle has-text-success has-text-weight-medium is-3"
+              ></p>
             </article>
           </div>
         </div>
+      </div>
+      <div class="container">
+        <div class="columns">
+          <div class="column">
+
+            <div class="tile is-ancestor">
+              <div class="tile is-parent" id="table_wrapper">
+                <table
+                  class="tile table is-fullwidth is-child box has-text-centered"
+                >
+                  <thead>
+                    <tr>
+                     
+
+                      
+                      <th ><abbr>Name</abbr></th>
+    
+                      <th><abbr>Confirmed</abbr></th>
+                      <th><abbr>Changes Today</abbr></th>
+                      <th><abbr>Death</abbr></th>
+                      <th><abbr>Changes Today</abbr></th>
+                      <th><abbr>Recovered</abbr></th>
+                      <th><abbr>Changes Today</abbr></th>
+                    
+                    </tr>
+                  </thead>
+                  <tbody id="indiaStatsTable">
+                    <tr>
+                      <th></th>
+    
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            
+           
+          </div>
+          <div class="column">
+            <canvas id="doughnut-chart" width="1000" height="450"></canvas>
         
-       <div><canvas id="myChart"></canvas></div> 
+          </div>
        
-       <canvas id="myChartTCC"></canvas>
+        </div>
+
+        
+        <div class="chartwrapper">
+         
+         <canvas id="myChartTCC"></canvas> 
+ 
+         <div class="chart-container">
+           <canvas id="chart"></canvas>
+       </div>
+       
+       </div>
+
       </div>
     </section>
 
-    
- 
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <script src="index.js"></script>
   </body>
 </html>
-
-
-
-
 
 

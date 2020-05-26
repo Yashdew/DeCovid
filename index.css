@@ -74,3 +74,24 @@ tr td:hover {
   height: 50rem;
   padding: 0rem !important;
 }
+
+
+/* .chartwrapper {
+  
+  width: 80vh !important;
+  position: absolute;
+  overflow: auto;
+  } */
+
+ 
+  
+  .chart-container {
+    position: relative;
+    margin: auto;
+    height: 80vh;
+    width: 80vw;
+  }
+  
+  #india .tile.table {
+    max-height: max-content !important;
+  }
